@@ -77,6 +77,7 @@ While the initial assumption favors segmentation, the intention with the baselin
     * Specific implementations (including `BaseModel`)
 
 **`README_img`** - Displayed images in READMEs
+
 [**`requirements.txt`**](requirements.txt) - Required packages
 
 ### Results
