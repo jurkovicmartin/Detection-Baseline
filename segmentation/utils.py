@@ -31,5 +31,7 @@ def determine_model(name: str,
         return SegFormer(name, saves_dir, logs_dir, device)
     elif type == "dpt":
         return DPT(name, saves_dir, logs_dir, device)
+    elif type == "deeplabv3_plus":
+        return DeepLabV3_plus(name, saves_dir, logs_dir, device)
     else:
         raise ValueError(f"Not supported model: {name}")

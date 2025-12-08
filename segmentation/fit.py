@@ -10,7 +10,7 @@ from dataset.dataset import SmallDataset, Fold
 from segmentation.utils import determine_model
 
 
-SUPPORTED_MODELS = ["nested_unet", "dpt", "segformer"]  # Model type
+SUPPORTED_MODELS = ["nested_unet", "dpt", "segformer", "deeplabv3_plus"]  # Model type
 ### HYPERPARAMETERS
 
 # Dataset

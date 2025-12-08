@@ -28,6 +28,13 @@ Segmentation models are trained in a **supervised** way with existing ground-tru
         <td><a href="https://arxiv.org/abs/2103.13413">paper</a></td>
         <td><a href="https://smp.readthedocs.io/en/latest/models.html#dpt">model</a></td>
     </tr>
+    <tr>
+        <th>DeepLabV3+</th>
+        <td>extended DeepLabV3</td>
+        <td>2018</td>
+        <td><a href="https://arxiv.org/abs/1802.02611">paper</a></td>
+        <td><a href="https://smp.readthedocs.io/en/latest/models.html#deeplabv3plus">model</a></td>
+    </tr>
 </table>
 
 ### Structure
@@ -137,6 +144,39 @@ Segmentation models are trained in a **supervised** way with existing ground-tru
         <td align="center">0.691</td>
         <td align="center">0.467</td>
         <td align="center">0.411</td>
+        <td align="center">0.576</td>
+    </tr>
+        <tr>
+        <td colspan="4" align="center"><strong>DeepLabV3+</strong> (Resnet-18 backbone)</td>
+    </tr>
+    <tr>
+        <td colspan="4"><img src="../README_img/deeplabv3_plus_1.png" width=100%></td>
+    </tr>
+    <tr>
+        <th>Pixel AUROC</th>
+        <th>Pixel AP</th>
+        <th>IoU</th>
+        <th>F1</th>
+    </tr>
+    <tr>
+        <td align="center">0.824</td>
+        <td align="center">0.622</td>
+        <td align="center">0.468</td>
+        <td align="center">0.614</td>
+    </tr>
+    <tr>
+        <td colspan="4"><img src="../README_img/deeplabv3_plus_61.png" width=100%></td>
+    </tr>
+    <tr>
+        <th>Pixel AUROC</th>
+        <th>Pixel AP</th>
+        <th>IoU</th>
+        <th>F1</th>
+    </tr>
+    <tr>
+        <td align="center">0.800</td>
+        <td align="center">0.501</td>
+        <td align="center">0.412</td>
         <td align="center">0.576</td>
     </tr>
 </table>

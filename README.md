@@ -20,7 +20,7 @@ While the initial assumption favors segmentation, the intention with the baselin
     <tbody>
         <tr>
             <td><a href="https://arxiv.org/abs/1807.10165v1">UNet++</a></td>
-            <td>Nested U-Net</td>
+            <td>nested U-Net</td>
             <td>Segmentation</td>
             <td>2018</td>
         </tr>
@@ -41,6 +41,12 @@ While the initial assumption favors segmentation, the intention with the baselin
             <td>Student-Teacher Feature Pyramid Matching</td>
             <td>Detection</td>
             <td>2021</td>
+        </tr>
+        <tr>
+            <td><a href="https://arxiv.org/abs/1802.02611v3">DeepLabV3+</a></td>
+            <td>extended DeepLabV3</td>
+            <td>Segmentation</td>
+            <td>2018</td>
         </tr>
     </tbody>
 </table>
@@ -126,6 +132,14 @@ While the initial assumption favors segmentation, the intention with the baselin
             <td>0.188</td>
             <td>0.112</td>
             <td>0.196</td>
+        </tr>
+        <tr>
+            <td>DeepLabV3+</td>
+            <td>Resnet-18</td>
+            <td>0.719</td>
+            <td>0.278</td>
+            <td>0.216</td>
+            <td>0.329</td>
         </tr>
     </tbody>
 </table>
