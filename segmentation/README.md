@@ -45,7 +45,9 @@ Segmentation models are trained in a **supervised** way with existing ground-tru
 * [**`utils.py`**](utils.py) - Helper functions
 
 ### Outcomes
+>Error in display logic caused that prediction maps displayed here do not reflect meaned values (cross-validation) and only show map from the last model.
 
+>The error does not affected the displayed prediction masks.
 <table>
     <tr>
         <td colspan="4" align="center"><strong>UNet++</strong> (Resnet-18 backbone)</td>

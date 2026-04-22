@@ -129,12 +129,13 @@ class SmallDataset:
         self.masks = self.masks / 255
 
 
-    def cross_validation_split(self, folds: int =1):
+    def cross_validation_split(self, folds: int =1, shuffle: bool =False):
         """
         Split the dataset into folds for cross-validation.
 
         Args:
             folds (int, optional): The number of folds to split the dataset into. Defaults to 1.
+            shuffle (bool, optional): Whether to shuffle the dataset before splitting. Defaults to False.
         """
         if folds == 1:
             fold_images = torch.from_numpy(self.images).float()
@@ -142,8 +143,10 @@ class SmallDataset:
             self.folds.append(Fold(fold_images, fold_masks))
             return
 
-        samples_num = len(self)
-        splits = np.array_split(np.arange(samples_num), folds)
+        indices = np.arange(len(self))
+        if shuffle:
+            np.random.shuffle(indices)
+        splits = np.array_split(indices, folds)
 
         for fold_indices in splits:
             fold_images = torch.from_numpy(self.images[fold_indices]).float()

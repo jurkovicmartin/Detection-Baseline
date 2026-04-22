@@ -91,7 +91,7 @@ def main():
 
             imgs = [img.squeeze(0).cpu().numpy().transpose(1, 2, 0),
                     gt_mask.numpy().transpose(1, 2, 0),
-                    prediction.transpose(1, 2, 0),
+                    final_prediction.transpose(1, 2, 0),
                     pred_mask.transpose(1, 2, 0)]
             
             labels = [f"Input {samples[processed_samples-1]}", "Ground-Truth mask", "Prediction map", "Prediction mask"]
