@@ -1,9 +1,11 @@
 # Detection Baseline
-> This repository contains the implementation of a baseline of anomaly detection models developed for my thesis.
+This repository contains the implementation of a reference baseline of anomaly detection models developed for my thesis.
 
-For the project a specific **dataset was provided**, composed of CT scan of welds. A major characteristic of this dataset is that it consists exclusively of **anomalous grayscale images**. This unique composition presented several challenges during fitting it into existing models, leading to a relatively small number of models included in the baseline. Fortunately, the dataset includes few **ground-truth masks** indicating the location of anomalies for a small subset of images. This results in an extremely small and highly specific set, suggesting that segmentation models would be the most suitable option for this work.
+> For more information see [RADASP](https://github.com/jurkovicmartin/RADASP) repository.
 
-While the initial assumption favors segmentation, the intention with the baseline was not to be strictly limited with these models. Therefore, the implementation is divided into two groups. The first is [Segmentation models](/segmentation/README.md) and second [Detection models](/detection/README.md). The detection group covers models with several different concepts, such as teacher-student, memory bank, and others. The implementation is based on [PyTorch](https://pytorch.org/).
+For the project a specific **industrial dataset was available**, composed of CT scan of welds. A major characteristic of this dataset is that it consists exclusively of **anomalous grayscale images**. This unique composition presented several challenges during fitting it into existing models, leading to a relatively small number of models included in the baseline. Fortunately, the dataset includes few **ground-truth masks** indicating the location of anomalies for a small subset of images. This results in an small and highly specific set, suggesting that segmentation models would be the most suitable option for this work.
+
+While the initial assumption favors segmentation, the intention with the baseline was not to be strictly limited with these models. Therefore, the implementation is divided into two groups. The first is [Segmentation models](/segmentation/README.md) and second [Detection models](/detection/README.md). The detection group covers models with several different concepts, such as teacher-student, memory bank, and others. The baseline implementation is based on [PyTorch](https://pytorch.org/).
 
 ### Models Included
 > For more information about the models, see the specific directories.
@@ -52,10 +54,10 @@ While the initial assumption favors segmentation, the intention with the baselin
 </table>
 
 ### Evaluation Metrics
-* **AUROC** (Area Under ROC curve) at the pixel level
+* **AUROC** (Area Under the Receiver Operating Characteristic curve) at the pixel level
 * **AP** (Average Precision) at the pixel level
 * **IoU** (Intersection over Union)
-* **F1** score
+* **F1** (Dice) score
 
 ### Repository Structure
 
@@ -87,7 +89,7 @@ While the initial assumption favors segmentation, the intention with the baselin
 [**`requirements.txt`**](requirements.txt) - Required packages
 
 ### Results
-> Due to the hardware limitations the baseline uses 224x224 inputs.
+> The baseline uses 224×224 inputs.
 
 <table>
     <thead>

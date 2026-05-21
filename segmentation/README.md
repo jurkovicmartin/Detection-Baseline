@@ -1,7 +1,7 @@
 # Segmentation models
 > This directory contains the implementations of segmentation models used for anomaly detection.
 
-Segmentation models are trained in a **supervised** way with existing ground-truth masks. To address the extremely small size of the dataset, **cross-validation** and **augmentation** techniques used during training.
+Segmentation models are trained in a **supervised** way with existing ground-truth masks. To address the small size of the dataset, **cross-validation**, and **data augmentation** techniques used during training.
 
 
 ### Implemented Models
@@ -45,9 +45,9 @@ Segmentation models are trained in a **supervised** way with existing ground-tru
 * [**`utils.py`**](utils.py) - Helper functions
 
 ### Outcomes
->Error in display logic caused that prediction maps displayed here do not reflect meaned values (cross-validation) and only show map from the last model.
+>Bug in display logic caused that prediction maps displayed here do not reflect averaged values (cross-validation) and only show map from the last model.
 
->The error does not affected the displayed prediction masks.
+>The bug did not affect the displayed prediction masks.
 <table>
     <tr>
         <td colspan="4" align="center"><strong>UNet++</strong> (Resnet-18 backbone)</td>
