@@ -1,7 +1,7 @@
 # Detection Models
 > This directory contains implementations of detection models used for anomaly detection.
 
-Detection models typically utilize **unsupervised** or **semi-supervised** training, therefore they expect dataset with mostly normal samples. Since the provided dataset lacks normal samples completely, a non-standard **patch-based** approach was employed. These models were trained with 128x128 **normal patches** with the cost of losing global context but enabling experimentation with this type of models.
+Detection models typically utilize **unsupervised** or **semi-supervised** training, therefore they expect dataset with mostly normal samples. Since the provided dataset lacks normal samples completely, a non-standard **patch-based** approach was employed. These models were trained with 128×128 **normal patches** with the cost of losing global context but enabling experimentation with this type of models.
 
 The experimentation included many models, of which only one produced relevant outcomes. There are several factors that could affect this low success rate, such as the non-standard training methodology, selected image size, and others.
 
